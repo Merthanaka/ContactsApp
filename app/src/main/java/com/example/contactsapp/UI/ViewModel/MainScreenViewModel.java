@@ -11,11 +11,17 @@ import com.example.contactsapp.data.repo.ContactsDaoRepository;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainScreenViewModel extends ViewModel {
-    public ContactsDaoRepository mrepo = new ContactsDaoRepository();
-    public MutableLiveData<List<Contacts>> contactList;
+import javax.inject.Inject;
 
-    public MainScreenViewModel(){
+import dagger.hilt.android.lifecycle.HiltViewModel;
+
+@HiltViewModel
+public class MainScreenViewModel extends ViewModel {
+    public ContactsDaoRepository mrepo;
+    public MutableLiveData<List<Contacts>> contactList;
+    @Inject
+    public MainScreenViewModel(ContactsDaoRepository mrepo){
+        this.mrepo=mrepo;
         loadContacts();
         contactList = mrepo.contactList;
     }

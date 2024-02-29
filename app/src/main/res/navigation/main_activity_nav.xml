@@ -25,10 +25,17 @@
         <argument
             android:name="Contact"
             app:argType="com.example.contactsapp.data.entity.Contacts" />
+        <action
+            android:id="@+id/updated"
+            app:destination="@id/mainPage" />
     </fragment>
     <fragment
         android:id="@+id/registerPage"
         android:name="com.example.contactsapp.UI.RegisterPage"
         android:label="fragment_register_page"
-        tools:layout="@layout/fragment_register_page" />
+        tools:layout="@layout/fragment_register_page" >
+        <action
+            android:id="@+id/saved"
+            app:destination="@id/mainPage" />
+    </fragment>
 </navigation>

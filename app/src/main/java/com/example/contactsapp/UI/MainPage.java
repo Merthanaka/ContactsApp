@@ -22,6 +22,9 @@
 
         import java.util.ArrayList;
 
+        import dagger.hilt.android.AndroidEntryPoint;
+
+        @AndroidEntryPoint
         public class MainPage extends Fragment {
             private FragmentMainPageBinding binding;
             private MainScreenViewModel viewModel;

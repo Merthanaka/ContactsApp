@@ -5,7 +5,11 @@ The application aims to be a platform where you can add, update and delete your 
 operation order(MVVM) when developing an application and to strengthen the use of view binding.
 
 
-Uploading untitled.mp4…
+
+
+https://github.com/Merthanaka/ContactsApp/assets/94761569/40c4e040-2c37-48bc-8c9c-bc894c7244b5
+
+
 
 
 
